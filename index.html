@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=stylesheet href="style.css">
+    <script src="app.js" defer></script>
+    <title>Chat Application</title>
+</head>
+
+<body>
+
+    <div class="chat-app">
+        <aside class="chat-sidebar">
+            <div class="chat-sidebar__config">
+                <figure class="profile-icon">
+                    <img src="assets/default.png" alt="Profile">
+                </figure>
+                <div class="chat-sidebar__options">
+                    <button class="chat-sidebar__button chat-sidebar__button--new">
+                        <img src="assets/comment.png" alt="">
+                    </button>
+                    <button class="chat-sidebar__button chat-sidebar__button--settings">
+                        <img src="assets/dots.png" alt="">
+
+                    </button>
+                </div>
+            </div>
+            <nav class="chat-sidebar__nav">
+                <div class="chat-search">
+                    <input type="text" placeholder="Search" class="chat-search__input">
+                </div>
+                <div class="chat-list">
+                    <li class="chat-list__item"> <!-- Lista de mensajes en el sidebar-->
+                        <article>
+                            <figure class="chat-list__figure">
+                                <img src="assets/default.png" alt="Chat Image">
+                            </figure>
+                            <div class="chat-list__details">
+                                <h3 class="chat-list__name">Dee 2</h3>
+                                <p class="chat-list__message">How are you?</p>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="chat-list__item"> <!-- Lista de mensajes en el sidebar-->
+                        <article>
+                            <figure class="chat-list__figure">
+                                <img src="assets/default.png" alt="Chat Image">
+                            </figure>
+                            <div class="chat-list__details">
+                                <h3 class="chat-list__name">+34626805916</h3>
+                                <p class="chat-list__message">Hi!</p>
+                            </div>
+                        </article>
+                    </li>
+                </div>
+            </nav>
+        </aside>
+        <section class="chat-main">
+            <header class="chat-main__header">
+                <figure class="chat-main__figure">
+                    <img src="assets/default.png" alt="Chat Header">
+                </figure>
+                <div class="chat-main__options">
+                    <button class="chat-main__button chat-main__button--clip">
+                        <img src="assets/clip.png" alt="">
+                    </button>
+                    <button class="chat-main__button chat-main__button--settings">
+                        <img src="assets/dots.png" alt="">
+                    </button>
+                </div>
+            </header>
+            <div class="chat-main__body">
+                <div class="chat-main__message chat-main__message--left">
+                    <p class="chat-main__message-text">Hi!</p>
+                </div>
+                <div class="chat-main__message chat-main__message--right">
+                    <p class="chat-main__message-text">Hello!</p>
+                </div>
+                <div class="chat-main__message chat-main__message--left">
+                    <p class="chat-main__message-text">How are you?</p>
+                </div>
+                <div class="chat-main__message chat-main__message--right">
+                    <p class="chat-main__message-text">I'm fine, thanks!</p>
+                </div>
+                <div class="chat-main__message chat-main__message--left">
+                    <p class="chat-main__message-text">How are you?</p>
+                </div>
+
+
+
+            </div>
+            <footer class="chat-main__footer">
+                <input type="text" placeholder="Type a message" class="chat-main__input">
+                <button class="chat-main__send">
+                    <img src="assets/send.png" alt="">
+                </button>
+            </footer>
+        </section>
+
+    </div>
+
+</body>
+
+</html>
